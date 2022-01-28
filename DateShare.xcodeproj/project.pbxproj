@@ -13,6 +13,10 @@
 		2F7F3CDC277B4927003FF337 /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F3CDA277B4927003FF337 /* Top.storyboard */; };
 		2F7F3CDE277B492E003FF337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F3CDD277B492E003FF337 /* Assets.xcassets */; };
 		2F7F3CE1277B492E003FF337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F3CDF277B492E003FF337 /* LaunchScreen.storyboard */; };
+		384DED1C27920D0B00647055 /* PlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DED1B27920D0B00647055 /* PlanModel.swift */; };
+		384DED1F27921C6400647055 /* PlanListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DED1E27921C6400647055 /* PlanListModel.swift */; };
+		38BC6770279FEB8600F695AF /* PlanListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC676E279FEB8600F695AF /* PlanListCollectionViewCell.swift */; };
+		38BC6771279FEB8600F695AF /* PlanListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38BC676F279FEB8600F695AF /* PlanListCollectionViewCell.xib */; };
 		38F829C4277B5C52001F8E29 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F829C3277B5C52001F8E29 /* Search.storyboard */; };
 		38F829C6277B5D17001F8E29 /* PlanList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F829C5277B5D17001F8E29 /* PlanList.storyboard */; };
 		38F829C8277B5D25001F8E29 /* PlanShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F829C7277B5D25001F8E29 /* PlanShow.storyboard */; };
@@ -34,6 +38,10 @@
 		2F7F3CDD277B492E003FF337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F7F3CE0277B492E003FF337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F7F3CE2277B492E003FF337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384DED1B27920D0B00647055 /* PlanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanModel.swift; sourceTree = "<group>"; };
+		384DED1E27921C6400647055 /* PlanListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListModel.swift; sourceTree = "<group>"; };
+		38BC676E279FEB8600F695AF /* PlanListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlanListCollectionViewCell.swift; path = Storyboard/PlanListCollectionViewCell.swift; sourceTree = "<group>"; };
+		38BC676F279FEB8600F695AF /* PlanListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlanListCollectionViewCell.xib; path = Storyboard/PlanListCollectionViewCell.xib; sourceTree = "<group>"; };
 		38F829C3277B5C52001F8E29 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		38F829C5277B5D17001F8E29 /* PlanList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlanList.storyboard; sourceTree = "<group>"; };
 		38F829C7277B5D25001F8E29 /* PlanShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlanShow.storyboard; sourceTree = "<group>"; };
@@ -76,6 +84,8 @@
 		2F7F3CD3277B4927003FF337 /* DateShare */ = {
 			isa = PBXGroup;
 			children = (
+				38BC676E279FEB8600F695AF /* PlanListCollectionViewCell.swift */,
+				38BC676F279FEB8600F695AF /* PlanListCollectionViewCell.xib */,
 				2F7F3CD4277B4927003FF337 /* AppDelegate.swift */,
 				2F7F3CD6277B4927003FF337 /* SceneDelegate.swift */,
 				2F7F3CD8277B4927003FF337 /* TopViewController.swift */,
@@ -84,6 +94,8 @@
 				38F829D1277B60AC001F8E29 /* PlanShowViewController.swift */,
 				38F829D3277B60BB001F8E29 /* PlanCreateViewController.swift */,
 				38F829D5277B60D0001F8E29 /* PlanEditViewController.swift */,
+				384DED1E27921C6400647055 /* PlanListModel.swift */,
+				384DED1B27920D0B00647055 /* PlanModel.swift */,
 				38F829C2277B5B65001F8E29 /* Storyboard */,
 				2F7F3CDD277B492E003FF337 /* Assets.xcassets */,
 				2F7F3CDF277B492E003FF337 /* LaunchScreen.storyboard */,
@@ -170,6 +182,7 @@
 				38F829C6277B5D17001F8E29 /* PlanList.storyboard in Resources */,
 				38F829C8277B5D25001F8E29 /* PlanShow.storyboard in Resources */,
 				38F829CA277B5D37001F8E29 /* PlanCreate.storyboard in Resources */,
+				38BC6771279FEB8600F695AF /* PlanListCollectionViewCell.xib in Resources */,
 				2F7F3CDC277B4927003FF337 /* Top.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,8 +200,11 @@
 				38F829D2277B60AC001F8E29 /* PlanShowViewController.swift in Sources */,
 				38F829CE277B6042001F8E29 /* SearchViewController.swift in Sources */,
 				38F829D0277B609D001F8E29 /* PlanListViewController.swift in Sources */,
+				384DED1F27921C6400647055 /* PlanListModel.swift in Sources */,
 				2F7F3CD7277B4927003FF337 /* SceneDelegate.swift in Sources */,
 				38F829D6277B60D0001F8E29 /* PlanEditViewController.swift in Sources */,
+				38BC6770279FEB8600F695AF /* PlanListCollectionViewCell.swift in Sources */,
+				384DED1C27920D0B00647055 /* PlanModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +353,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KZL4VYQ3R5;
+				DEVELOPMENT_TEAM = 6G8KJ7X2TY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DateShare/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -345,6 +361,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Top;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,7 +382,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KZL4VYQ3R5;
+				DEVELOPMENT_TEAM = 6G8KJ7X2TY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DateShare/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -373,6 +390,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Top;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
