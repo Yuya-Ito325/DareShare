@@ -1,3 +1,4 @@
+
 build/
 *.pbxuser
 !default.pbxuser
@@ -24,5 +25,4 @@ Pods/*
 .DS_Store
 *.cuserdata
 *.cuserstate
-© 2022 GitHub, Inc.
-Terms
+
