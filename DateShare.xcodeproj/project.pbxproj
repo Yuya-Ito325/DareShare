@@ -15,6 +15,8 @@
 		2F7F3CE1277B492E003FF337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F3CDF277B492E003FF337 /* LaunchScreen.storyboard */; };
 		384DED1C27920D0B00647055 /* PlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DED1B27920D0B00647055 /* PlanModel.swift */; };
 		384DED1F27921C6400647055 /* PlanListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DED1E27921C6400647055 /* PlanListModel.swift */; };
+		38BC6770279FEB8600F695AF /* PlanListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC676E279FEB8600F695AF /* PlanListCollectionViewCell.swift */; };
+		38BC6771279FEB8600F695AF /* PlanListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38BC676F279FEB8600F695AF /* PlanListCollectionViewCell.xib */; };
 		38F829C4277B5C52001F8E29 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F829C3277B5C52001F8E29 /* Search.storyboard */; };
 		38F829C6277B5D17001F8E29 /* PlanList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F829C5277B5D17001F8E29 /* PlanList.storyboard */; };
 		38F829C8277B5D25001F8E29 /* PlanShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F829C7277B5D25001F8E29 /* PlanShow.storyboard */; };
@@ -38,6 +40,8 @@
 		2F7F3CE2277B492E003FF337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		384DED1B27920D0B00647055 /* PlanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanModel.swift; sourceTree = "<group>"; };
 		384DED1E27921C6400647055 /* PlanListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListModel.swift; sourceTree = "<group>"; };
+		38BC676E279FEB8600F695AF /* PlanListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlanListCollectionViewCell.swift; path = Storyboard/PlanListCollectionViewCell.swift; sourceTree = "<group>"; };
+		38BC676F279FEB8600F695AF /* PlanListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlanListCollectionViewCell.xib; path = Storyboard/PlanListCollectionViewCell.xib; sourceTree = "<group>"; };
 		38F829C3277B5C52001F8E29 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		38F829C5277B5D17001F8E29 /* PlanList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlanList.storyboard; sourceTree = "<group>"; };
 		38F829C7277B5D25001F8E29 /* PlanShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlanShow.storyboard; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		2F7F3CD3277B4927003FF337 /* DateShare */ = {
 			isa = PBXGroup;
 			children = (
+				38BC676E279FEB8600F695AF /* PlanListCollectionViewCell.swift */,
+				38BC676F279FEB8600F695AF /* PlanListCollectionViewCell.xib */,
 				2F7F3CD4277B4927003FF337 /* AppDelegate.swift */,
 				2F7F3CD6277B4927003FF337 /* SceneDelegate.swift */,
 				2F7F3CD8277B4927003FF337 /* TopViewController.swift */,
@@ -176,6 +182,7 @@
 				38F829C6277B5D17001F8E29 /* PlanList.storyboard in Resources */,
 				38F829C8277B5D25001F8E29 /* PlanShow.storyboard in Resources */,
 				38F829CA277B5D37001F8E29 /* PlanCreate.storyboard in Resources */,
+				38BC6771279FEB8600F695AF /* PlanListCollectionViewCell.xib in Resources */,
 				2F7F3CDC277B4927003FF337 /* Top.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +203,7 @@
 				384DED1F27921C6400647055 /* PlanListModel.swift in Sources */,
 				2F7F3CD7277B4927003FF337 /* SceneDelegate.swift in Sources */,
 				38F829D6277B60D0001F8E29 /* PlanEditViewController.swift in Sources */,
+				38BC6770279FEB8600F695AF /* PlanListCollectionViewCell.swift in Sources */,
 				384DED1C27920D0B00647055 /* PlanModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
