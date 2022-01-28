@@ -1,4 +1,4 @@
-# Xcode (from gitignore.io)
+
 build/
 *.pbxuser
 !default.pbxuser
@@ -25,3 +25,4 @@ Pods/*
 .DS_Store
 *.cuserdata
 *.cuserstate
+
