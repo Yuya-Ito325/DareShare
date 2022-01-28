@@ -7,7 +7,10 @@
 
 import UIKit
 
-class TopViewController: UIViewController {
+class TopViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    
+    @IBOutlet weak var genreCollectionView: UICollectionView!
     
     private var scrollView: UIScrollView!
     private var pageControl: UIPageControl!
@@ -26,6 +29,8 @@ class TopViewController: UIViewController {
         Photo(imageName: "skii")
     ]
     
+    private let photos = ["BBQ", "skii", "see"]
+    private let titles = ["BBQ", "skii", "see"]
     
     
     
@@ -56,6 +61,14 @@ class TopViewController: UIViewController {
         self.pageControl.currentPageIndicatorTintColor = UIColor.black
         self.view.addSubview(self.pageControl)
         
+        
+        //collectionViewLayout
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: self.view.frame.width / 3, height: self.view.frame.width / 6)
+        layout.minimumInteritemSpacing = 30
+        layout.sectionInset = UIEdgeInsets(top: 20, left: self.view.frame.width / 10, bottom: 3, right: self.view.frame.width / 10)
+        genreCollectionView.collectionViewLayout = layout
+        
         //scrollViewにUIImageViewを配置
         self.setUpImageView()
         
@@ -76,6 +89,30 @@ class TopViewController: UIViewController {
     }
     
     
+    //ジャンルメニュー
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return photos.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        
+        let photoImageView = cell.contentView.viewWithTag(1) as! UIImageView
+        let photoImage = UIImage(named: photos[indexPath.row])
+        photoImageView.image = photoImage
+        
+        let titleLabel = cell.contentView.viewWithTag(2) as! UILabel
+        titleLabel.text = titles[indexPath.row]
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("\(titles[indexPath.row])がタップされました")
+    }
+    
+    
+    //写真スライド
     func createImageView(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat, image: Photo) -> UIImageView{
         let imageView = UIImageView(frame: CGRect(x: x, y: y, width: width, height: height))
         let image = UIImage(named:  image.imageName)
